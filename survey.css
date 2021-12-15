@@ -1,0 +1,234 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* body  */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg,
+            rgba(5, 209, 165, 0.8),
+            rgba(136, 136, 206, 0.185)),
+        url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMmitqBObeESgBQ18OErqeIrWzrAXJSnpDXxPn_O2EyxUWVpSVXImU3NdlR5ESW4ZE_JU&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* h1  */
+
+
+.con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 31px 42px;
+    /* background-color: rgb(4, 32, 156); */
+}
+
+/* heading  */
+.con h1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Para  */
+
+.con p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+/* Form section */
+
+#survey-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 23px 10px;
+    background-color: #057aff;
+    border-radius: 5px;
+    width: 645px;
+    padding: 10px 10px;
+
+}
+
+/* 
+.form-group {
+    /* max-width: -1px; */
+
+/* label section */
+
+label {
+    display: flex;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif;
+    margin: 7px 0px;
+    margin-top: 22px;
+}
+
+input,
+select,
+textarea {
+    width: 49rem;
+    height: 25px;
+}
+
+.clue {
+    padding: 3px;
+    font-size: 14px;
+    color: #e4e4e4;
+}
+
+.Select-label {
+    margin: 10px 0px;
+    margin-top: 22px;
+    /* display: flex; */
+    width: 30em;
+}
+
+#dropdown {
+    /* width: 1em; */
+    height: 30px;
+}
+
+.input-radio,
+.input-checkbox {
+    display: flex;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    width: 17px;
+
+    margin: -3px 5px;
+
+}
+
+.radio {
+    display: flex;
+
+    margin: 8px 2px;
+    padding: 0px 0px;
+}
+
+/* .checkbox */
+
+.checkbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    flex-direction: column;
+    width: 590px;
+    margin-top: 0px;
+}
+
+.check {
+    margin-top: 0px;
+}
+
+.comments {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    flex-direction: column;
+    width: 590px;
+
+    /* resize: vertical; */
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 10px 14px -1px 14px;
+}
+
+
+.btn {
+    width: 600px;
+    margin: 19px 21px;
+    padding: 14px 23px;
+    background-color: #38e73891;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(43, 61, 226, 0.569);
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+    .con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #survey-form {
+        display: flex;
+        align-content: center;
+        justify-content: left;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 23px 10px;
+        background-color: #057aff;
+        border-radius: 5px;
+        max-width: 436px;
+        padding: 10px 10px;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    label {
+
+        max-width: 311px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 35rem;
+        height: 25px;
+    }
+
+    .checkbox {
+        display: flex;
+        align-items: baseline;
+        justify-content: left;
+        flex-direction: column;
+        width: 590px;
+        margin-top: 0px;
+    }
+
+    .clue {
+        width: 10px;
+    }
+
+
+}
